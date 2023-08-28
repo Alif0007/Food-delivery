@@ -1,0 +1,192 @@
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Css Variable */
+
+
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+
+}
+
+#logo img {
+    height: 40px;
+    width: 39px;
+    margin: 10px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+
+
+.item {
+    display: block;
+    padding: 3px 20px;
+    color: white;
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.3rem;
+
+    border-radius: 20px;
+}
+
+.item:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(../Content/bg.jpg)no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 550px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+#home h1 {
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+
+}
+
+#home p {
+    color: aliceblue;
+}
+
+/* Service Section */
+
+.service-container {
+    margin: 35px;
+}
+
+.service-container h1 {
+    margin-bottom: 34px;
+}
+
+#services {
+
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: aliceblue;
+}
+
+#services .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+/* Cilent Section  */
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client img {
+    padding: 34px;
+    height: 100px;
+}
+
+
+
+
+/* Contract Section  */
+
+.contract-box {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+.contract-box form {
+    width: 40%;
+}
+
+.contract-box label {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.3rem;
+}
+
+.contract-box input,
+.contract-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+/* Utility Class */
+
+
+
+
+.btn {
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.h-primary {
+    font-size: 3.25rem;
+}
+
+.h-secondary {
+    font-size: 2.5rem;
+}
+
+.center {
+    text-align: center;
+}
